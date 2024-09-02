@@ -7,3 +7,5 @@
   - name: print the information
     ansible.builtin.debug:
       msg: "This is {{NAME}}, working as {{DESIGNATION}}"
+
+  
