@@ -1,0 +1,6 @@
+- name: print the variables
+  hosts: all
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "This is Nagendra, working on Sr.DevOps Engineer"
