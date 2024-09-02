@@ -6,5 +6,6 @@
   - name: DESIGNATION
     prompt: "please enter the Designation"
   tasks:
-  - ansible.builtin.debug:
-    msg: "{{NAME}}'s {{DESIGNATION}}"
+  - name: "Print the varfrom prompt"
+    ansible.builtin.debug:
+      msg: "{{NAME}}'s {{DESIGNATION}}"
