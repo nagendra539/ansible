@@ -1,6 +1,9 @@
 - name: print the variables
-  hosts: all
+  hosts: web
+  vars:
+    NAME: "Nagendrababu"
+    DESIGNATION: "Sr.DevOps Engineer"
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg: "This is Nagendra, working on Sr.DevOps Engineer"
+      msg: "This is {{NAME}}, working as {{DESIGNATION}}"
