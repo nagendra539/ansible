@@ -5,4 +5,4 @@
   tasks:
   - name: "printitng the vars"
     ansible.builtin.debug:
-      msg: "{{NAGENDRA}}'s {{DESIGNATION}} is working on {{COURSE}}'"
+      msg: "{{NAME}}'s {{DESIGNATION}} is working on {{COURSE}}'"
