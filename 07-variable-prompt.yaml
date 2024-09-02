@@ -3,7 +3,7 @@
   vars_prompt:
   - name: NAME
     prompt: "Please enter the prompt"
-    prinvate: false # value will be visbile in cmd line
+    private: false # value will be visbile in cmd line
   - name: DESIGNATION
     prompt: "please enter the Designation"
     private: false
