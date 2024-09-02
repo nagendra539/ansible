@@ -1,0 +1,10 @@
+- name: "Print the var from prompt"
+  hosts: web
+  vars_prompt:
+  - name: NAME
+    prompt: "Please enter the prompt"
+  - name: DESIGNATION
+    prompt: "please enter the Designation"
+  tasks:
+  - ansible.builtin.debug:
+    msg: "{{NAME}}'s {{DESIGNATION}}"
