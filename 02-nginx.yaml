@@ -4,4 +4,13 @@
   tasks:
   - name: printing the message
     ansible.builtin.debug:
+      msg: "Play02-Task01"
+
+- name: Play01 - task02
+  hosts: web
+  become: yes
+  tasks:
+  - name: printing the message
+    ansible.builtin.debug:
+      msg: "Play02- Task-02"
       
