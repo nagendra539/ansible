@@ -7,10 +7,15 @@
   - name: print the information
     ansible.builtin.debug:
       msg: "This is {{NAME}}, working as {{DESIGNATION}}"
+
   - name: print the variables
     vars: 
       NAME: "CHUNDURU"
       DESIGNATION: "Sr.TechnicalLead"
+    ansible.builtin.debug:
+      msg: "This is {{NAME}}, working as {{DESIGNATION}}"
+
+  - name: print the information on task:3
     ansible.builtin.debug:
       msg: "This is {{NAME}}, working as {{DESIGNATION}}"
   
