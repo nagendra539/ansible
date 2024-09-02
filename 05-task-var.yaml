@@ -1,0 +1,16 @@
+- name: variables to print
+  hosts: web
+  vars:
+    NAME: "Nagendrababu"
+    DESIGNATION: "Sr.DevOps Engineer"
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "This is {{NAME}}, working as {{DESIGNATION}}"
+  - name: print the variables
+    vars: 
+      NAME: "CHUNDURU"
+      DESIGNATION: "Sr.TechnicalLead"
+    ansible.builtin.debug:
+      msg: "This is {{NAME}}, working as {{DESTINATION}}"
+  
