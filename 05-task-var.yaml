@@ -12,5 +12,5 @@
       NAME: "CHUNDURU"
       DESIGNATION: "Sr.TechnicalLead"
     ansible.builtin.debug:
-      msg: "This is {{NAME}}, working as {{DESTINATION}}"
+      msg: "This is {{NAME}}, working as {{DESIGNATION}}"
   
