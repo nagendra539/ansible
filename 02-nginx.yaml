@@ -1,0 +1,7 @@
+- name: install nginx server
+  hosts: web
+  become: yes
+  tasks:
+  - name: printing the message
+    ansible.builtin.debug:
+      
