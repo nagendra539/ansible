@@ -14,5 +14,5 @@
   
   - name: "Creating the user"
     ansible.builtin.command: useradd expense
-    when: USER.rc  != 0
+    when: USER.rc  != 0  # return code is 0 for the created users. If user is not existed, then rc is non-zero 
 
