@@ -13,6 +13,6 @@
       msg: "information of the expense user: {{ USER }} " 
   
   - name: "Creating the user"
-    ansible.builtin.cmd: id expense
+    ansible.builtin.command: id expense
     when: USER.rc  != 0
 
