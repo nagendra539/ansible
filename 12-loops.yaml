@@ -11,3 +11,12 @@
     - Sush
     - shanvi
     - Navisha
+  
+  - name: install the packages
+    ansible.builtin.package:
+      name: {{ item }}
+      state: present
+    loop:
+    - nginx
+    - mysql
+    - openshift
