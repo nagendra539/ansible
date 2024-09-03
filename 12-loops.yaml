@@ -5,7 +5,7 @@
   tasks:
   - name: loops are working
     ansible.builtin.debug:
-      msg: "Hi ! This is {{ item }}"
+      msg: Hi ! This is {{ item }}
     loop:
     - Nagu
     - Sush
