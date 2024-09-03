@@ -1,0 +1,13 @@
+- name: "create the user expense"
+  become: yes
+  hosts: local
+  connection: local
+  tasks:
+  - name: "get the user info"
+    ansible.builtin.command: id expense
+    register: USER # it will store the output of above ansible.builtin.command
+
+  tasks:
+  - name: "get the user info"
+    ansible.builtin.debug:
+      msg: "information of the expense user: {{ USER }} " 
