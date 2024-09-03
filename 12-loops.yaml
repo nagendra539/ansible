@@ -15,7 +15,7 @@
   - name: install the packages
     ansible.builtin.package:
       name: "{{ item }}"
-      state: started
+      state: present
     loop:
     - nginx
     - mysql
