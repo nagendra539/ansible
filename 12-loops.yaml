@@ -12,12 +12,21 @@
     - shanvi
     - Navisha
   
-  - name: install the packages
+  # - name: install the packages
+  #   ansible.builtin.package:
+  #     name: "{{ item }}" # item is hte keyword for the loops.
+  #     state: present
+  #   loop:
+  #   - nginx
+  #   - mysql
+  #   - postfix
+  #   - httpd
+  - name: install the packages through maps from list
     ansible.builtin.package:
-      name: "{{ item }}"
-      state: present
+      name: "{{ loop.name }}"
+      state: "{{ loop.state }}"
     loop:
-    - nginx
-    - mysql
-    - postfix
-    - httpd
+    - { name: "nginx", state: "absent" } # it will remove the package
+    - { name: "mysql", state: "present" } # it will install the package
+    - { name: "postfix", state: "absent" }
+    - { name: "httpd", state: "absent" }
