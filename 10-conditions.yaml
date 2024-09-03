@@ -14,5 +14,5 @@
   
   - name: "Creating the user"
     ansible.builtin.cmd: id expense
-    when: {{ USER.rc }} != 0
+    when: USER.rc  != 0
 
