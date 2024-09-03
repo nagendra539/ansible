@@ -6,7 +6,7 @@
   - name: "create the  user info"
     ansible.builtin.command: id expense
     register: USER # it will store the output of above ansible.builtin.command
-    ignore_errors: true
+    ignore_errors: true # it will ignore the error and proceed for next task
 
   - name: "get the user info"
     ansible.builtin.debug:
