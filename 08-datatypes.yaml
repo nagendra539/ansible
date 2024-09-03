@@ -1,0 +1,26 @@
+- name: "print the data types"
+  hosts: local
+  connection: local
+  vars:
+    COURSE: "DevOps with AWS"
+    DURATION: "120"
+    LIVE: true
+    Topics:
+    -  ansible
+    -  Docker
+    -  K8
+    -  Jenkins
+    -  AWS
+    tools:
+      CI: Jenkins
+      CD: ArgoCD
+      cloud: AWS
+      aws:
+      -  IAM
+      -  S3
+      -  Route53
+  tasks:
+  -  name: "print the data types"
+     ansible.builtin.debug:
+       msg: "Im attending the course {{ COURSE }} with Duration {{ DURATION }} on live {{ LIVE }} covering the below topics {{ Topics }} and tools are {{ tools }}"       
+        
