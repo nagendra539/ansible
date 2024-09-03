@@ -14,9 +14,10 @@
   
   - name: install the packages
     ansible.builtin.package:
-      name: {{ item }}
-      state: present
+      name: "{{ item }}"
+      state: started
     loop:
     - nginx
     - mysql
-    - openshift
+    - postfix
+    - httpd
