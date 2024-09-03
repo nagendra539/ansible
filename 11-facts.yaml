@@ -5,4 +5,4 @@
   tasks:
   - name: print hte facts
     ansible.builtin.debug:
-      msg: "{{ ansible_facts }}"
+      msg: "{{ ansible_facts }}" # it will print all the varibales from the ansible node. 
