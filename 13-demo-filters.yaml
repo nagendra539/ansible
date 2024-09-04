@@ -33,11 +33,11 @@
     vars:
       nagendra:
       - key: name
-      - value: "nagendra"
+        value: "nagendra"
       - key: age
-      - value: 37
+        value: 37
       - key: designation
-      - value: Sr.TechnicalLead
+        value: Sr.TechnicalLead
     ansible.builtin.debug:
       msg: "{{ nagendra | items2dict }}"
       
