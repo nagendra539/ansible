@@ -28,3 +28,13 @@
         designation: "sr.Technical Sr.TechnicalLead"
     ansible.builtin.debug:
       msg: "{{ nagendra | dict2items }}"
+  
+  - name: convert list to map
+    vars:
+      nagendra:
+      - name: nagendra
+      - age: 37
+      - designation: Sr.TechnicalLead
+    ansible.builtin.debug:
+      msg: "{{ nagendra | items2dict }}"
+      
