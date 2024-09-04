@@ -16,5 +16,7 @@
 
   - name: print the output of command
     ansible.builtin.debug:
-      msg: " {{ CMD1 | to_yaml }} "
+      msg: " {{ CMD1 | to_yaml }} " # it wil convert to the yaml format.
+
+      
       
