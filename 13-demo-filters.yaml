@@ -27,4 +27,4 @@
         age: 37
         designation: "sr.Technical Sr.TechnicalLead"
     ansible.builtin.debug:
-      msg: "{{ nagendra | dict2item }}"
+      msg: "{{ nagendra | dict2items }}"
