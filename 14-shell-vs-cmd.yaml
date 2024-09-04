@@ -8,3 +8,7 @@
   - name: print the output
     ansible.builtin.debug:
       msg: " {{ CMD | to_yaml }} "
+  
+  - name: shell
+    ansible.builtin.shell: ls -lrth >> /tmp/output.txt
+      
