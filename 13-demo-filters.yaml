@@ -1,6 +1,8 @@
 - name: demo on filters/functions
   hosts: local
   connection: local
+  vars:
+    course: "DevOps with AWS"
   tasks:
   - name: print the default value
     ansible.builtin.debug:
