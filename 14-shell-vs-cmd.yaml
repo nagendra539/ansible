@@ -4,7 +4,7 @@
   tasks:
   - name: command
     ansible.builtin.command: ls -lrth 
-    register: CMD # save the output from above command
+    register: CMD1 # save the output from above command
   
   - name: shell
     ansible.builtin.shell: ps -ef | grep ansible >> /tmp/output.txt
@@ -16,5 +16,5 @@
 
   - name: print the output of command
     ansible.builtin.debug:
-      msg: " {{ CMD | to_yaml }} "
+      msg: " {{ CMD1 | to_yaml }} "
       
