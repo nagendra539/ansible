@@ -7,4 +7,4 @@
     register: CMD
   - name: print the output
     ansible.builtin.debug:
-      msg: " {{ CMD }} "
+      msg: " {{ CMD | to_nice_yaml }} "
