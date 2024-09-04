@@ -23,8 +23,8 @@
   - name: convert map to string
     vars:
       nagendra:
-        name: Nagendrababu
+        name: "Nagendrababu"
         age: 37
-        designation: sr.Technical Sr.TechnicalLead
+        designation: "sr.Technical Sr.TechnicalLead"
     ansible.builtin.debug:
-      msg: {{ nagendra | dict2item }}
+      msg: "{{ nagendra | dict2item }}"
