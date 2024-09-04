@@ -18,4 +18,12 @@
     vars:
       greeting: Hi This is Sushma
     ansible.builtin.debug:
-      msg: Hi {{ greeting | lower }}
+      msg: Hi {{ greeting | lower }} # convert to lower
+  
+  - name: convert map to string
+    vars:
+      name: Nagendrababu
+      age: 37
+      designation: sr.Technical Sr.TechnicalLead
+    ansible.builtin.debug:
+      msg: vars | dict2item 
