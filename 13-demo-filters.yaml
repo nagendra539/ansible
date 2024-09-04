@@ -32,9 +32,12 @@
   - name: convert list to map
     vars:
       nagendra:
-      - name: nagendra
-      - age: 37
-      - designation: Sr.TechnicalLead
+      - key: name
+      - value: "nagendra"
+      - key: age
+      - value: 37
+      - key: designation
+      - value: Sr.TechnicalLead
     ansible.builtin.debug:
       msg: "{{ nagendra | items2dict }}"
       
