@@ -9,7 +9,7 @@
       msg: "Hello {{ course | default('DevOps') }}" #If course is not defined, then it will print the default value.
 
   - name: convert to uppercase
-    var:
+    vars:
       greeting: "Hi This is Nagendrababu"
     ansible.builtin.debug:
       msg: "Hello {{ greeting  | upper }}"
