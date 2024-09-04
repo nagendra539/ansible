@@ -12,5 +12,5 @@
   - name: shell
     ansible.builtin.shell: ps -ef | grep ansible >> /tmp/output.txt
     register : CMD
-    msg: " {{ CMD }}"
+      msg: " {{ CMD }}"
       
