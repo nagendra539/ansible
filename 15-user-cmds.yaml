@@ -10,8 +10,8 @@
   
   - name: get the user information
     ansible.builtin.debug:
-      msg: "information of the user" {{ USER.rc }}
-  # - name: creating hte user
-  #   ansible.builtin.command: adduser nagendra
-  #   when: "{{ USER.rc }}" != 0
+      msg: "information of the user {{ USER.rc }}"
+  - name: creating hte user
+    ansible.builtin.command: adduser nagendra
+    when: {{ USER.rc }} != 0
       
