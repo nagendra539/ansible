@@ -14,4 +14,7 @@
   - name: creating hte user
     ansible.builtin.command: adduser nagendra
     when: USER.rc  != 0
+  
+  - name: removing the user
+    ansible.builtin.command: userdel nagendra 
       
