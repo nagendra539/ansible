@@ -1,0 +1,13 @@
+- name: creating the user
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+  - name: creating hte user
+    ansible.builtin.command: id nagendra
+    register: USER
+    ignore_errors: true
+  
+  - name: get the user information
+    ansible.builtin.debug:
+    msg: USER
