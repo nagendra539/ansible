@@ -10,4 +10,4 @@
   
   - name: get the user information
     ansible.builtin.debug:
-    msg: USER
+      msg: USER
