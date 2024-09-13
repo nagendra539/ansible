@@ -8,4 +8,8 @@
       path: /home/ec2-user/nagendra.txt
       state: touch
       mode: 600
+  - name: delete the file
+    ansible.builtin.file:
+      path: /home/ec2-user/nagendra.txt
+      state: absent
       
