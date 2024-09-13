@@ -12,5 +12,5 @@
     ansible.builtin.file:
       path: /home/ec2-user/nagendra.txt
       state: absent
-      ignore_error: true
+      #ignore_error: true
       
