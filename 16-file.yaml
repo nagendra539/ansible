@@ -6,5 +6,6 @@
   - name: creating the file
     ansible.builtin.file:
       path: /home/ec2-user/nagendra.txt
+      state: touch
       mode: 600
       
