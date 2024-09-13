@@ -1,0 +1,10 @@
+- name: creating the file
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+  - name: creating the file
+    ansible.builtin.file:
+      path: /home/ec2-user/nagendra.txt
+      mode: 600
+      
