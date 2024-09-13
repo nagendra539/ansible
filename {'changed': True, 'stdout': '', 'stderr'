@@ -1,1 +1,0 @@
-{'changed': True, 'stdout': '', 'stderr': 'id: ‘nagendra’: no such user', 'rc': 1, 'cmd': ['id', 'nagendra'], 'start': '2024-09-12 17:02:37.594447', 'end': '2024-09-12 17:02:37.602068', 'delta': '0:00:00.007621', 'failed': True, 'msg': 'non-zero return code', 'stdout_lines': [], 'stderr_lines': ['id: ‘nagendra’: no such user']}
